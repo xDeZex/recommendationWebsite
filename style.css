@@ -21,6 +21,8 @@ header {
 }
 
 .headermenu {
+    padding: 0;
+    min-width: 1100px;
     min-height: 100px;
     display:flex;
     justify-content: center;
@@ -71,11 +73,11 @@ main {
     position: relative;
     background-color: #c4dfea!important;
     display: flex;
+    justify-content: center;
 
 }
 
 .bigpic img {
-    margin-left: 300px;
     margin-top: 50px;
     height: 600px;
 }
@@ -104,6 +106,10 @@ main {
     text-decoration: none;
     color: #e89c00;
 
+}
+
+.buttonscon {
+    display: flex;
 }
 
 .bigpic a.button {
