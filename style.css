@@ -23,7 +23,7 @@ header {
 .headermenu {
     padding: 0;
     min-width: 1100px;
-    min-height: 100px;
+    min-height: 70px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@ a {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +69,7 @@ main {
 }
 
 .bigpic {
-    height: 700px;
+    height: 60%;
     position: relative;
     background-color: #c4dfea!important;
     display: flex;
@@ -78,8 +78,11 @@ main {
 }
 
 .bigpic img {
-    margin-top: 50px;
-    height: 600px;
+    height: auto;
+    width: 40%;
+    object-fit: contain;
+    max-width: 500px;
+    min-width: 421px;
 }
 
 .bigpictext{
@@ -178,10 +181,9 @@ main {
 }
 
 .textcontainer article {
-    margin-top: 1em;
-    margin-left: 1em;
+    padding: 1em;
 }
-.textcontainer div{
+.textcontainer .l1flex div{
     margin-left: 10px;
     margin-right: 10px;
 
@@ -200,17 +202,19 @@ main {
 .textcontainer img {
     width: 150px;
     object-fit: cover;
+    padding: 0em 0em 1em 0em;
 }
 
 .l2 {
-    display: flex;
-
+    display: flex
 }
 
 .l1 {
     max-width: 700px;
     border-style: solid;
     border-width: 0px 1px 0px 0px;
+    padding-right: 1em;
+    margin-left: none;
 }
 
 .r1 {
@@ -222,6 +226,12 @@ main {
     
     border-style: solid;
     border-width: 0px 0px 1px 0px;
+    padding-bottom: 1em;
+}
+
+.l2 article:first-child{
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
 }
 
 p {
